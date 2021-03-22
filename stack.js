@@ -1,12 +1,10 @@
 // functions implemented using stack
 
 const isPalindrom = (str) => {
-  const stack = []
+  const stack = str.split("")
   let rStr = ""
 
-  for ( i = 0; i < str.length; i++) {
-    stack.push(str[i])
-  }
+  
   
   for (i = 0; i < str.length; i++) {
     rStr += stack.pop()
@@ -17,7 +15,7 @@ const isPalindrom = (str) => {
   return false
 }
 
-//console.log(isPalindrom("bob"))
+console.log(isPalindrom("bo3"))
 
 
 var buildArray = function(target, n) {
@@ -52,7 +50,7 @@ var buildArray = function(target, n) {
 }
 
 
-console.log(buildArray([1,3], 3))
+//console.log(buildArray([1,3], 3))
 
 //3
 /**
